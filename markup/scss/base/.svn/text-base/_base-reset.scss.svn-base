@@ -1,0 +1,134 @@
+/* general reset */
+
+html{
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	-webkit-focus-ring-color:rgba(0,0,0,0);
+	tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+	min-width: $base-min-width;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:none;
+	line-height:1.65em;
+	@include breakpoint($mobile){
+		p{
+			margin:0 0 22px;
+		}
+	}
+}
+
+/* set styles for default page links */
+a {
+	text-decoration: none;
+	color:$primary-color;
+	&:hover{
+		text-decoration:none;
+		color:$royalblue-color;
+	}
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+figure{
+	margin:0;
+	padding:0;
+}
+
+img {
+	border-style: none;
+	vertical-align:top;
+}
+
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+input[type="search"]::-ms-clear{display:none;}
+
+input[type="button"],
+input[type="submit"]{
+	-webkit-background-clip:padding-box;
+	background-clip:padding-box;
+}
+input[type="button"]::-moz-focus-inner{border:0;}
+input[type="submit"]::-moz-focus-inner{border:0;}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	overflow: visible;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	border-radius:0;
+	cursor: pointer; 
+}
+input[type="submit"]:hover,
+button:hover{cursor:pointer;}
+input[type="submit"]:focus,
+input[type="button"]:focus{outline:none;}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+
+input[type="submit"],
+button::-moz-focus-inner{
+	padding:0;
+	border:0;
+}
+textarea {
+	overflow: auto;
+	resize: vertical;
+	vertical-align: top;
+	-webkit-overflow-scrolling:touch;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box; 
+	padding: 0; 
+}
+
+input[type="search"]::-webkit-search-decoration{display:none;}
+input[type="search"]::-webkit-search-cancel-button{display:none;}
+input[type="search"]::-webkit-search-results-button{display:none;}
+input[type="search"]::-webkit-search-results-decoration{display:none;}
+input[type="search"] {
+	-webkit-appearance:none;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border-radius:0;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="number"]::-webkit-inner-spin-button{
+	-webkit-appearance: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+	-webkit-appearance:none;
+	margin:0;
+}
+p{
+	margin:0 0 28px;
+}

@@ -1,0 +1,45 @@
+/* castom-variables */
+
+$brandon-font-family:"brandon-grotesque", Arial, sans-serif;
+$second-font: "brandon-grotesque", Helvetica, Arial, sans-serif;
+$add-background-color:#f6f6f6;
+$base-border-color:#ddd;
+
+$base-min-width:320px;
+
+
+$royalblue-color:#3867a8;
+$goldenrod-color:#e6a74f;
+$indianred-color:#cc5050;
+$white-color:#fff;
+$black-color:#000;
+$dimgrey-color:#747e8a;
+$dimgrey-color02:#848484;
+$dimgrey-color03:#585858;
+$gray-color:#444;
+$coral-color:#f27857;
+$gainsboro-color:#afafaf;
+$whitesmoke-color:#c0c0c0;
+
+
+/* rotate section */
+$deg:5deg;
+$deg-mobile:0deg;
+
+$footer-text-color:#979999;
+$footer-link-color:#7d8183;
+$footer-nav-color:#adadad;
+$footer-social-color:#adadad;
+
+// castom breakpoint
+
+$desktop-castom:1200px;
+$desktop:80em;
+$tablet:64em;
+$mobile:47.8em;
+$mobile-castom:479px;
+
+$mobile-opener-nav-button:#bfbfbf;
+$mobile-drop-border-color:rgba(255,255,255,0.2);
+
+// castom breakpoint

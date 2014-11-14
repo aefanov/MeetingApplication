@@ -1,0 +1,74 @@
+/* buttons style */
+
+.btn-get-started{
+	padding:30px 112px 25px 58px;
+	border-radius:60px;
+	height:115px;
+	background:$coral-color;
+	text-align:left;
+	&:hover{
+		background:darken($coral-color, 5%);
+	}
+	.title{
+		display:block;
+		font-size:30px;
+		line-height:36px;
+		font-weight:bold;
+		font-family:$brandon-font-family;
+		text-transform:uppercase;
+		margin:0 0 -1px;
+		opacity:0.8;
+	}
+	.note{
+		display:block;
+		font-size:17px;
+		line-height:22px;
+		color:$body-font-color;
+	}
+	&:after{
+		content:'\e604';
+		font-family:icomoon, sans-serif;
+		position:absolute;
+		right:36px;
+		top:50%;
+		font-size:46px;
+		line-height:46px;
+		margin:-23px 0 0;
+		color:$white-color;
+		opacity:0.5;
+	}
+	@include breakpoint($tablet){
+		padding:16px 80px 15px 34px;
+		height:74px;
+		.title{
+			font-size:22px;
+			line-height:24px;
+			margin:0 0 2px;
+		}
+		.note{
+			font-size:13px;
+			line-height:14px;
+		}
+		&:after{
+			right:24px;
+			font-size:34px;
+			line-height:34px;
+			margin:-17px 0 0;
+		}
+	}
+	@include breakpoint($mobile){
+		height:64px;
+		padding:22px 60px 20px 30px;
+		.note{
+			display:none;
+		}
+		.title{
+			font-size:17px;
+			line-height:22px;
+		}
+		&:after{
+			font-size:26px;
+			right:20px;
+		}
+	}
+}
